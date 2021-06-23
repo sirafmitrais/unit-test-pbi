@@ -3,7 +3,7 @@ const app = require('../index')
 
 describe('People Endpoint', () => {
     it.only('should create a new people', async () => {
-        const res = await request()
+        const res = await request(app)
             .post('/peoples')
             .send(
                 {
