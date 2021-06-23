@@ -11,17 +11,19 @@ app.use(express.urlencoded({ extended: true }))
 app.use('/peoples', peopleRouter)
 
 app.get('/', function (req, res) {
-    res.send(
-        "Good Morning"
-    )
+    res.send({
+        message: 'Good Morning'
+    })
 })
 
 app.use('*', function (req, res) {
     res.status(404).send({
         message: 'You Get Lost ? '
-    })
+    });
 })
 
 app.listen(port, () => {
     console.log(`Server is running at localhost:${port}`)
 })
+
+module.exports = app

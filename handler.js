@@ -35,7 +35,7 @@ var createData = function createData(req, res, next) {
     dataHandler.createData(data_input)
         .then(result => {
             console.log(result)
-            res.status(200).send(data_input)
+            res.status(201).send(data_input)
         });
 }
 
@@ -63,7 +63,7 @@ var deleteByIdUser = function (req, res) {
         .then(
             result => {
                 console.log(result)
-                res.status(200).send(result)
+                res.status(204).send(result)
             }
         )
         .catch(err => {

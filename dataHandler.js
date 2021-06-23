@@ -44,7 +44,7 @@ var getDetailById = async function getDetailById(people_id) {
         });
 }
 
-var createData = function createData(data_people) {
+var createData = async function createData(data_people) {
     return fs.readFile(people_data)
         .then((result) => {
             result_in_json = JSON.parse(result)
@@ -68,7 +68,7 @@ var createData = function createData(data_people) {
         })
 }
 
-function getDetailByQuery(q) {
+async function getDetailByQuery(q) {
     var pattern_regex = ""
     pattern_regex = q.toLowerCase().split("").map(
         (x) => {
@@ -95,7 +95,7 @@ function getDetailByQuery(q) {
         })
 }
 
-var deleteById = function deleteById(people_id) {
+var deleteById = async function deleteById(people_id) {
     return fs.readFile(people_data)
         .then((result) => {
             result_in_json = JSON.parse(result)
