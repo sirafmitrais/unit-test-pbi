@@ -1,0 +1,32 @@
+{
+  "name": "unit-test-pbi",
+  "version": "1.0.0",
+  "description": "unit test assignment for mitrais training",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirafmitrais/unit-test-pbi.git"
+  },
+  "keywords": [
+    "unit",
+    "test",
+    "jest",
+    "javascript",
+    "training"
+  ],
+  "author": "Muhammad Faris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sirafmitrais/unit-test-pbi/issues"
+  },
+  "homepage": "https://github.com/sirafmitrais/unit-test-pbi#readme",
+  "devDependencies": {
+    "jest": "^27.0.5"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
